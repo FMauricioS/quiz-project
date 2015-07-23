@@ -2,6 +2,26 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/pure-min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    .pure-menu.pure-menu-horizontal
+      a.pure-menu-heading.pure-menu-link(href='/') Inicio
+      ul.pure-menu-list
+        li.pure-menu-item
+          a.pure-menu-link(href='/quizes/question') Preguntas
+      ul.pure-menu-list
+        li.pure-menu-item
+          a.pure-menu-link(href='#') Autores
+          
+    section
+      div
+        block content
+      
+  .footer
+    #button
+    #container
+      #cont
+        .footer_center
+          h3 Mauricio Serna Flórez
+          a(href="https://github.com/FMauricioS/quiz-project" target="_blank") GitHub Project
