@@ -1,1 +1,5 @@
 h1 #{pregunta}
+
+form(method='get', action='/quizes/answer')
+  input(type='text', name='respuesta', placeholder='Responda aquí')
+  input(type='submit', value='Enviar')
